@@ -32,7 +32,7 @@ Actions act =new Actions(driver);
  act.sendKeys(Keys.ARROW_UP).perform();
 
  Thread.sleep(2000);
- //driver.quit();
+ driver.quit();
  
  
 	}
