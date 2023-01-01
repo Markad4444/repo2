@@ -24,7 +24,7 @@ driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 WebElement ele= driver.findElement(By.xpath("(//div[@class='_6ltg'])[2]//*"));
 Actions act =new Actions(driver);
- act.moveToElement(ele);
+ act.moveToElement(ele).perform();
  ele.click();
  WebElement ele2= driver.findElement(By.id("month"));
  act.moveToElement(ele2).click().build().perform();
